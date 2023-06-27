@@ -5,7 +5,7 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 
-function Template() {
+function Template({refs}) {
 
 
   const {about, educationList, skills,
@@ -14,7 +14,7 @@ function Template() {
     
 
   return (
-    <div className="w-[100%]  h-[900px] shadow-2xl Actual-Resume">
+    <div className="w-[100%]  h-[900px] shadow-2xl Actual-Resume" ref={refs}>
       <div className="w-[100%] p-4">
         <div className="text-xl font-bold">{about.name ? about.name : "Jhon Doe"}</div>
         <div className="opacity-[0.8]">{about.role ? about.role : "Full Stack Web Developer"}</div>

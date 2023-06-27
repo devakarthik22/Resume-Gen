@@ -47,8 +47,8 @@ function BuilderDashboard() {
       <div className="w-[100%] flex justify-between">
       
         <Editer></Editer>
-        <div className="w-[53%]"  ref={componentPDF}>
-                <Template></Template>
+        <div className="w-[53%]"  >
+                <Template refs={componentPDF}></Template>
 
         </div>
 
